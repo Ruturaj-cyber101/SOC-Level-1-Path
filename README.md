@@ -80,6 +80,38 @@ To build practical blue team skills required for a **SOC Analyst (Level 1)** rol
 - Incident response fundamentals
 - SIEM querying (Splunk & Elastic)
 - Framework-based threat mapping (MITRE ATT&CK)
+# 🎣 Section 5 – Phishing Analysis
+
+- Phishing Analysis Fundamentals  
+- Phishing Emails in Action  
+- Phishing Analysis Tools  
+- Phishing Prevention  
+- The Greenholt Phish  
+
+**Skills Gained:**
+- Identifying phishing emails
+- Email header analysis
+- Using phishing investigation tools
+- Understanding social engineering techniques
+- Phishing detection and prevention
+
+---
+
+# 🌐 Section 6 – Network Traffic Analysis
+
+- Network Traffic Basics  
+- Wireshark: The Basics  
+- Wireshark: Packet Operations  
+- Wireshark: Traffic Analysis  
+- NetworkMiner  
+
+**Skills Gained:**
+- Understanding network traffic behaviour
+- Packet analysis using Wireshark
+- Identifying suspicious network activity
+- Investigating network communications
+- Network forensic analysis
+
 
 ---
 
