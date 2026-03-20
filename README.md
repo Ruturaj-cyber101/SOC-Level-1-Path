@@ -112,6 +112,25 @@ To build practical blue team skills required for a **SOC Analyst (Level 1)** rol
 - Investigating network communications
 - Network forensic analysis
 
+# 🛡 Section 7 – Network Security Monitoring
+
+- Network Security Essentials  
+- Network Discovery Detection  
+- Data Exfiltration Detection  
+- Man-in-the-Middle Detection  
+- IDS Fundamentals  
+- Snort  
+
+**Skills Gained:**
+- Network monitoring and threat detection
+- Identifying scanning and reconnaissance activity
+- Detecting data exfiltration techniques
+- Understanding MITM attacks
+- Working with IDS tools like Snort
+- Analyzing network-based alerts
+- 
+  
+
 
 ---
 
