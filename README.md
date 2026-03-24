@@ -254,7 +254,109 @@ Monitoring traffic patterns is key to detecting and mitigating DDoS attacks.
 
 ---
 
-  
+ ## 📁 Section 9: Windows Security Monitoring
+
+---
+
+### 🪟 Room 1: Windows Logging for SOC
+
+#### 📌 Overview
+This room focuses on Windows logging and how logs are used in SOC environments to monitor and investigate security events.
+
+#### 🧠 Key Concepts
+- Windows Event Logs (Security, System, Application)  
+- Event Viewer usage  
+- Event IDs for tracking activity  
+
+#### 🚨 Important Event IDs
+- 4624 → Successful login  
+- 4625 → Failed login  
+- 4634 → Logoff  
+- 4672 → Admin privileges assigned  
+
+#### 🔍 SOC Analyst Notes
+- Monitor failed login attempts  
+- Detect unusual login times  
+- Track admin privilege usage  
+
+#### 🧪 Key Takeaway
+Windows logs are essential for detecting unauthorized access and suspicious activity.
+
+---
+
+### 🪟 Room 2: Windows Threat Detection 1
+
+#### 📌 Overview
+Focuses on detecting basic threats using Windows logs and identifying suspicious behavior.
+
+#### 🧠 Key Concepts
+- Threat detection using logs  
+- Monitoring login and process activity  
+
+#### 🚨 Indicators
+- Multiple failed logins (brute force)  
+- Suspicious login patterns  
+- Privilege escalation  
+
+#### 🔍 SOC Analyst Notes
+- Repeated failed logins followed by success  
+- Sudden admin privilege assignment  
+- Unusual processes  
+
+#### 🧪 Key Takeaway
+Detection is based on identifying abnormal behavior in logs.
+
+---
+
+### 🪟 Room 3: Windows Threat Detection 2
+
+#### 📌 Overview
+Introduces advanced detection techniques using event correlation and process monitoring.
+
+#### 🧠 Key Concepts
+- Event correlation  
+- Process monitoring (Event ID 4688)  
+- Attack pattern analysis  
+
+#### 🚨 Indicators
+- Credential abuse  
+- Suspicious process execution  
+- Persistence activity  
+
+#### 🔍 SOC Analyst Notes
+- Unusual parent-child processes  
+- Repeated authentication attempts  
+- Registry and scheduled task changes  
+
+#### 🧪 Key Takeaway
+Advanced detection requires correlating multiple events.
+
+---
+
+### 🪟 Room 4: Windows Threat Detection 3
+
+#### 📌 Overview
+Focuses on detecting advanced threats like persistence and lateral movement.
+
+#### 🧠 Key Concepts
+- Attack lifecycle  
+- Persistence mechanisms  
+- Lateral movement  
+
+#### 🚨 Indicators
+- Scheduled tasks and registry changes  
+- Activity across multiple systems  
+- Suspicious services  
+
+#### 🔍 SOC Analyst Notes
+- Multiple endpoint activity  
+- Unusual service installations  
+- Cross-system login patterns  
+
+#### 🧪 Key Takeaway
+Understanding attacker behavior is key to detecting advanced threats.
+
+--- 
   
 
 
