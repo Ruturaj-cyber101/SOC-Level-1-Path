@@ -128,7 +128,133 @@ To build practical blue team skills required for a **SOC Analyst (Level 1)** rol
 - Understanding MITM attacks
 - Working with IDS tools like Snort
 - Analyzing network-based alerts
-- 
+
+## 📁 Section 8: Web Security Monitoring
+
+---
+
+### 🌐 Room 1: Web Security Essentials
+
+#### 📌 Overview
+This room introduces the fundamentals of web security, including how web applications function and common vulnerabilities attackers exploit.
+
+#### 🧠 Key Concepts
+- Web Application Architecture (Client ↔ Server ↔ Database)  
+- HTTP vs HTTPS (Encryption using SSL/TLS)  
+- HTTP Methods (GET, POST, PUT, DELETE)  
+
+#### 🚨 Common Web Attacks
+- SQL Injection (SQLi)  
+- Cross-Site Scripting (XSS)  
+- Cross-Site Request Forgery (CSRF)  
+- File Inclusion (LFI/RFI)  
+
+#### 🛡️ Defensive Measures
+- Input validation & sanitization  
+- HTTPS implementation  
+- Authentication & authorization  
+- Web Application Firewall (WAF)  
+
+#### 🔍 SOC Analyst Notes
+- Monitor suspicious URLs and repeated requests  
+- Detect SQL keywords and script injections  
+
+#### 🧪 Key Takeaway
+Understanding web fundamentals helps in detecting and analyzing web-based attacks.
+
+---
+
+### 🌐 Room 2: Detecting Web Attacks
+
+#### 📌 Overview
+Focuses on identifying web attacks through log analysis and monitoring techniques.
+
+#### 🧠 Key Concepts
+- Web logs (IP, request, status codes)  
+- Status codes (200, 404, 500)  
+- User behavior analysis  
+
+#### 🚨 Indicators
+- SQLi → `' OR 1=1 --`, `UNION SELECT`  
+- XSS → `<script>`  
+- Brute force → Multiple login attempts  
+- Directory traversal → `../`  
+
+#### 🛡️ Detection Techniques
+- Log analysis (Apache/Nginx)  
+- SIEM tools (Splunk)  
+- Pattern recognition  
+
+#### 🔍 SOC Analyst Notes
+- High traffic from single IP  
+- Suspicious query strings  
+- Failed login attempts  
+
+#### 🧪 Key Takeaway
+Detection relies on recognizing patterns and abnormal behavior.
+
+---
+
+### 🌐 Room 3: Detecting Web Shells
+
+#### 📌 Overview
+Covers detection of malicious scripts (web shells) used for persistent server access.
+
+#### 🧠 Key Concepts
+- Web shells (.php, .jsp, .aspx)  
+- Remote command execution  
+- Persistence  
+
+#### 🚨 Indicators
+- Suspicious file uploads  
+- Unknown files in web directories  
+- Repeated POST requests  
+
+#### 🛡️ Detection Techniques
+- File monitoring  
+- Log analysis  
+- File Integrity Monitoring (FIM)  
+
+#### 🔍 SOC Analyst Notes
+- Commands in URL parameters  
+- Unusual activity in `/var/www/html`  
+- Suspicious user-agents  
+
+#### 🧪 Key Takeaway
+Early detection of web shells is critical to prevent long-term compromise.
+
+---
+
+### 🌐 Room 4: Detecting Web DDoS Attacks
+
+#### 📌 Overview
+Focuses on detecting DDoS attacks that overwhelm web servers with high traffic.
+
+#### 🧠 Key Concepts
+- DDoS (high traffic from multiple sources)  
+- HTTP Flood, Slowloris, Botnets  
+
+#### 🚨 Indicators
+- Sudden traffic spikes  
+- Multiple IPs targeting same endpoint  
+- High request rate  
+
+#### 🛡️ Detection Techniques
+- Traffic monitoring  
+- SIEM alerts  
+- Rate limiting  
+
+#### 🔍 SOC Analyst Notes
+- Repeated identical requests  
+- Unusual traffic patterns  
+- Geographic anomalies  
+
+#### 🧪 Key Takeaway
+Monitoring traffic patterns is key to detecting and mitigating DDoS attacks.
+
+---
+
+  
   
 
 
