@@ -1,0 +1,36 @@
+
+
+#### 📌 Overview
+This room introduces the basics of detecting threats in Linux systems by analysing logs, system activity, and identifying suspicious behaviour that may indicate a security incident.
+
+---
+
+#### 🧠 Key Concepts
+
+- **Threat Detection** involves identifying malicious or unusual activity in a system.
+- SOC analysts rely heavily on **log analysis** and **system monitoring**.
+- Understanding **normal vs abnormal behaviour** is critical.
+
+---
+
+#### 🔍 Common Indicators of Compromise (IOCs)
+
+- Multiple **failed login attempts**  
+- Logins from **unusual IP addresses**  
+- Unexpected **sudo/root activity**  
+- Unknown or suspicious **processes running**  
+- Changes in system files or configurations  
+
+---
+
+#### ⚙️ Monitoring Commands & Tools
+
+- `ps aux` → View running processes  
+- `top` → Real-time system activity monitoring  
+- `who` → Check logged-in users  
+- `last` → View login history  
+- `netstat -tulnp` → Check open ports and services  
+
+Example:
+```bash
+ps aux | grep suspicious_process
