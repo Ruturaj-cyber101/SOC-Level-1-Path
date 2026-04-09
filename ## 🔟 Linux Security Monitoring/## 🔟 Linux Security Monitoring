@@ -1,0 +1,62 @@
+#### 📌 Overview
+This room focuses on understanding how logging works in Linux systems and how Security Operations Center (SOC) analysts use logs to monitor, detect, and investigate suspicious activities.
+
+---
+
+#### 🧠 Key Concepts
+
+- **Linux Logs** store important system and user activity information.
+- Logs are critical for **incident detection**, **investigation**, and **forensics**.
+- Most logs are stored in the `/var/log/` directory.
+
+---
+
+#### 📂 Important Log Files
+
+- `/var/log/syslog` → General system activity logs  
+- `/var/log/auth.log` → Authentication logs (SSH logins, sudo usage)  
+- `/var/log/kern.log` → Kernel-related logs  
+- `/var/log/dpkg.log` → Package installation logs  
+- `/var/log/apache2/` → Web server logs (if Apache is installed)
+
+---
+
+#### 🔍 Log Monitoring Tools
+
+- `cat` → View entire log file  
+- `less` → Scroll through logs easily  
+- `tail -f` → Monitor logs in real-time  
+- `grep` → Search for specific keywords (e.g., failed logins)
+
+Example:
+```bash
+grep "Failed password" /var/log/auth.log
+🚨 SOC Use Cases
+Detect failed login attempts (Brute-force attacks)
+Monitor unauthorized sudo access
+Identify suspicious IP addresses
+Investigate system changes and anomalies
+🧪 Practical Skills Gained
+Navigating Linux log directories
+Reading and analyzing log files
+Using command-line tools for log investigation
+Identifying security-related events in logs
+✅ Status
+
+✔️ Completed
+
+
+---
+
+### 🔥 Next Step (IMPORTANT)
+After adding this:
+- ✅ Update your **main README section list**
+- ✅ Commit with message:
+
+Added Room 1: Linux Logging for SOC (Section 10)
+
+
+---
+
+Send next room bro 💻🚀  
+We’ll build **Section 10** strong 💪
