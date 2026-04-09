@@ -1,0 +1,37 @@
+
+
+#### 📌 Overview
+This room builds on initial threat detection concepts by diving deeper into advanced techniques for identifying suspicious activities in Linux systems, including deeper log analysis and process/network investigation.
+
+---
+
+#### 🧠 Key Concepts
+
+- Advanced threat detection requires **correlating multiple data sources**  
+- Focus on **logs, processes, and network activity together**  
+- Identifying **persistence mechanisms** used by attackers  
+- Recognising subtle signs of compromise in a system  
+
+---
+
+#### 🔍 Advanced Indicators of Compromise (IOCs)
+
+- Repeated login attempts across multiple accounts  
+- Suspicious or hidden **background processes**  
+- Unusual **network connections** to unknown IPs  
+- Unexpected **cron jobs or scheduled tasks**  
+- Modified or newly created critical system files  
+
+---
+
+#### ⚙️ Investigation Commands & Tools
+
+- `ps -ef` → Detailed process list  
+- `lsof` → List open files and network connections  
+- `ss -tulnp` → Check active network sockets  
+- `crontab -l` → View scheduled tasks  
+- `find` → Search for suspicious or recently modified files  
+
+Example:
+```bash
+lsof -i
