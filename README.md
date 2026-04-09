@@ -358,7 +358,111 @@ Understanding attacker behavior is key to detecting advanced threats.
 
 --- 
   
+## 🔟 Linux Security Monitoring
 
+🐧 Room 1: Linux Logging for SOC  
+📌 Overview  
+This room focuses on Linux logging and how logs are used in SOC environments to monitor and investigate system and security events.  
+
+🧠 Key Concepts  
+Linux log files (/var/log/)  
+System logs and authentication logs  
+Log analysis using command-line tools  
+
+🚨 Important Logs  
+/var/log/syslog → General system activity  
+/var/log/auth.log → Authentication (SSH, sudo)  
+/var/log/kern.log → Kernel logs  
+/var/log/dpkg.log → Package activity  
+
+🔍 SOC Analyst Notes  
+Monitor failed SSH login attempts  
+Track sudo (privilege escalation) usage  
+Identify unusual login activity  
+Use grep and tail for quick analysis  
+
+🧪 Key Takeaway  
+Linux logs are critical for detecting unauthorized access and system anomalies.  
+
+---
+
+🐧 Room 2: Linux Threat Detection 1  
+📌 Overview  
+Focuses on detecting basic threats in Linux systems using logs and system monitoring commands.  
+
+🧠 Key Concepts  
+Threat detection basics  
+Monitoring processes and user activity  
+Understanding normal vs abnormal behaviour  
+
+🚨 Indicators  
+Multiple failed login attempts  
+Unusual user activity  
+Unknown running processes  
+Suspicious login locations  
+
+🔍 SOC Analyst Notes  
+Use `ps`, `top` to monitor processes  
+Check login history using `last`  
+Investigate failed logins in auth.log  
+Watch for unauthorized access  
+
+🧪 Key Takeaway  
+Threat detection starts with identifying unusual system behaviour.  
+
+---
+
+🐧 Room 3: Linux Threat Detection 2  
+📌 Overview  
+Introduces advanced detection techniques including process, network, and file activity analysis.  
+
+🧠 Key Concepts  
+Process and network monitoring  
+Event correlation  
+Identifying persistence mechanisms  
+
+🚨 Indicators  
+Suspicious network connections  
+Unknown open ports  
+Hidden or background processes  
+Unexpected file changes  
+
+🔍 SOC Analyst Notes  
+Use `lsof` and `ss` for network analysis  
+Check cron jobs for persistence  
+Monitor active processes carefully  
+Look for unusual outbound connections  
+
+🧪 Key Takeaway  
+Advanced detection requires analysing multiple system components together.  
+
+---
+
+🐧 Room 4: Linux Threat Detection 3  
+📌 Overview  
+Focuses on detecting advanced threats such as persistence, privilege escalation, and compromised accounts.  
+
+🧠 Key Concepts  
+Persistence techniques  
+Privilege escalation detection  
+User and account monitoring  
+
+🚨 Indicators  
+New or suspicious user accounts  
+Modified cron jobs or startup scripts  
+Unauthorized SSH access  
+Changes in system configurations  
+
+🔍 SOC Analyst Notes  
+Check `/etc/passwd` for new users  
+Review command history  
+Investigate privilege changes  
+Monitor scheduled tasks  
+
+🧪 Key Takeaway  
+Understanding attacker techniques helps detect and respond to advanced threats.  
+
+---
 
 ---
 
