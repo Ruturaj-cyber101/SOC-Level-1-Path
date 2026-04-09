@@ -1,0 +1,37 @@
+
+
+#### 📌 Overview
+This room focuses on advanced threat detection techniques in Linux systems, including identifying attacker persistence, deeper investigation of compromised systems, and responding to security incidents using multiple data sources.
+
+---
+
+#### 🧠 Key Concepts
+
+- Threat detection requires **continuous monitoring and investigation**  
+- Attackers often establish **persistence mechanisms** to maintain access  
+- Combining **logs, processes, and network analysis** is essential  
+- Quick identification helps reduce impact of security incidents  
+
+---
+
+#### 🔍 Key Indicators of Compromise (IOCs)
+
+- Unknown **user accounts** or privilege changes  
+- Suspicious **cron jobs or startup scripts**  
+- Hidden or renamed **malicious processes**  
+- Unusual **outbound traffic** to external systems  
+- Unexpected modifications in system configuration files  
+
+---
+
+#### ⚙️ Investigation Commands & Tools
+
+- `whoami` → Check current user  
+- `id` → View user privileges  
+- `history` → Review executed commands  
+- `cat /etc/passwd` → Check user accounts  
+- `crontab -l` → Inspect scheduled jobs  
+
+Example:
+```bash
+cat /etc/passwd
